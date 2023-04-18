@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart House</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <h1>Smart Home Control Panel</h1>
+        </header>
+        <main>
+            <div class="smart-controls">
+                <section class="lights">
+                    <h2>Lights</h2>
+                    <div class="controls">
+                        <button id="lights-on">Turn On</button>
+                        <button id="lights-off">Turn Off</button>
+                    </div>
+                </section>
+                <section class="climate">
+                    <h2>Climate</h2>
+                    <div class="controls">
+                        <label for="temperature">Temperature:</label>
+                        <input type="number" id="temperature" min="16" max="30" step="1">
+                        <button id="set-temperature">Set</button>
+                        <label for="humidity">Humidity:</label>
+                        <input type="number" id="humidity" min="30" max="70" step="1">
+                        <button id="set-humidity">Set</button>
+                        <label for="climate-status">Climate-status:</label>
+                        <button id="climate-status">Get climate status</button>
+                        <button id="conditioner">Conditioner</button>
+                        <button id="heater">Heater</button>
+                    </div>
+                </section>
+                <section class="security">
+                    <h2>Security</h2>
+                    <div class="controls">
+                        <button id="alarm">Alarm</button>
+                        <button id="doors">Doors</button>
+                        <button id="video">Video</button>
+                        <button id="motion">Motion</button>
+                        <label for="security-status">Security-status:</label>
+                        <button id="security-status">Get security status</button>
+                    </div>
+                </section>
+                <section class="devices">
+                    <h2>Devices</h2>
+                    <div class="controls">
+                        <button id="fridge">Fridge</button>
+                        <button id="coffee-maker">Coffee-maker</button>
+                        <button id="washing-machine">Washing-machine</button>
+                        <button id="oven">Oven</button>
+                    </div>
+                </section>
+                <section class="controls">
+                    <h2>TV remote control</h2>
+                    <button id="tv-power-button">Power</button>
+                    <button id="tv-channel-up-button">Channel Up</button>
+                    <button id="tv-channel-down-button">Channel Down</button>
+                    <button id="tv-show-channels">Show channels</button>
+                    <button id="tv-volume-up-button">Volume Up</button>
+                    <button id="tv-volume-down-button">Volume Down</button>
+                </section>
+            </div>
+        </main>
+        <footer>
+            <div id="modal">
+                <div class="modal-content">
+                    <span class="close">&times;</span>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <script src="house.js"></script>
+    <script src="lighting.js"></script>
+    <script src="climate.js"></script>
+    <script src="security.js"></script>
+    <script src="appliance.js"></script>
+    <script src="devices.js"></script>
+    <script src="tv.js"></script>
+    <script src="events.js"></script>
+
+</body>
+
+</html>
